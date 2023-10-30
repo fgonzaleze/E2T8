@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E2T8.MainPage">
+    
+    <FlexLayout Direction="Column">
+        <Label FlexLayout.Basis="50"
+               Text="AYUDAAAAA"
+               TextColor="Black"
+               BackgroundColor="AliceBlue"
+               HorizontalTextAlignment="Center" />
+        <!--El grow tiene el valor 0 predeterminado, y al ponerlo en 1 sirve para que ocupe todo el espacio disponible-->
+        <FlexLayout FlexLayout.Grow="1">
+            <Label FlexLayout.Basis="50"
+                   Text="AAAAAAAAAA"
+                   BackgroundColor="Gray"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FlexLayout.Grow="1" /> 
+            <!--el Order es un valor entero predeterminado en 0, al ponerlo en -1 hace que aparezca como el primer elemento de la fila-->
+            <Label FlexLayout.Basis="50"
+                     FlexLayout.Order="-1"  
+                     BackgroundColor="Blue"/>
+            <!--el Basis sirve para ajustar el tamaño-->
+            <Label FlexLayout.Basis="50"
+                     BackgroundColor="Green" />
+        </FlexLayout>
+            <Label FlexLayout.Basis="50"
+                   Text="aaaaaaaaa"
+                   TextColor="Black"
+                   BackgroundColor="Pink"
+                   HorizontalTextAlignment="Center" />
+    </FlexLayout>
+
+</ContentPage>
